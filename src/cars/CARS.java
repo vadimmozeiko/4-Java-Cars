@@ -14,7 +14,8 @@ public class CARS {
         System.out.println();
         int numberOfCars = sc.nextInt();
         System.out.println();
-        System.out.println("Enter distance: ");
+        System.out.println("Enter distance (km): ");
+        System.out.println();
         int maxDistance = sc.nextInt();
         System.out.println();
 
@@ -29,8 +30,11 @@ public class CARS {
                 }
             }
         } while (distance < maxDistance);
+        System.out.println();
+        System.out.println("-------- STATISTICS -------- ");
+        System.out.println();
         for (int i = 0; i < cars.length; i++) {
-            System.out.println((i + 1) + " car distance is: " + cars[i]);
+            System.out.println((i + 1) + " car distance is: " + cars[i] + " km");
             System.out.println();
         }
     }
